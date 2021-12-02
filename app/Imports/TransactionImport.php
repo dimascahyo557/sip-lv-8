@@ -16,7 +16,7 @@ class TransactionImport implements ToModel, WithHeadingRow
     public function model(array $row)
     {
         return new Transaction([
-            'product_id' => $row['product'],
+            'product_id' => $row['product_id'],
             'trx_date' => $row['date'],
             'price' => $row['price'],
         ]);
